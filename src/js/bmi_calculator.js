@@ -11,8 +11,15 @@ function BMICalculator(){
         }
       };
 
-    BMICalculator.prototype.imperial_bmi = function(obj) {
-        let 
+      BMICalculator.prototype.imperial_bmi = function(obj) {
+        let weight = obj.weight;
+        let height = obj.height;
+        if (weight > 0 && height > 0) {
+          let finalBmi = weight / (height * height) * 703;
+              obj.bmiValue = parseFloat(finalBmi.toFixed(2));
+              setBMIMessage(obj);
+        }
+      };
     }
   
     function setBMIMessage (obj){
