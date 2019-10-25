@@ -36,7 +36,7 @@ function BMICalculator(){
         obj.bmiMessage = "Obese"
       }
     }
-  };
+  ;
     
   if (typeof module !== 'undefined' && module.exports) {
       module.exports = BMICalculator;

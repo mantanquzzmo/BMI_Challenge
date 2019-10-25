@@ -9,6 +9,10 @@ describe("Person", () => {
         weight: 90,
         height: 186
     })
+    Person.prototype.calculate_imperial_bmi  = function() {
+        calculator = new BMICalculator();
+        calculator.imperial_bmi(this);
+      };
 
     it("should have weight of 90", () => {
         expect(person.weight).to.equal(90);

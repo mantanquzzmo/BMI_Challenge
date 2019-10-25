@@ -14,6 +14,7 @@ describe('BMICalculator', () => {
         bmi_calculator.metric_bmi(person)
         expect(person.bmiValue).to.eql(26.01)
     })
+    
     it("sets BMI message for a person using metric method", () => {
         bmi_calculator.metric_bmi(person);
         expect(person.bmiMessage).to.equal('Overweight');
